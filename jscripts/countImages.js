@@ -26,7 +26,8 @@ for(var i = 0; i < imagesClassmates.length; i++) {
 
 
 
-/*  if an image is clicked check to see if it is in the imagesClicked array
+/* another thought 
+if an image is clicked check to see if it is in the imagesClicked array
     if is not, add it to the array and increase imageCounter by one
       if the image has already been clicked throw an alert
         saying "the image has alredy been clicked" and do not increment imageCounter
