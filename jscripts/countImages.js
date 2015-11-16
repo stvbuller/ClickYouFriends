@@ -12,10 +12,13 @@ for(var i = 0; i < imagesClassmates.length; i++) {
 }
 
 
+/* the idea here to to check the data-state of an image, if the
+    data-state is "notclicked" count the image and change the 
+    data-state to "clicked", if the data-state is "clicked" do
+    not count the image, at the end of the game the data-state 
+    for all images is set to "notclicked"
 
-
-
-/* function whenClicked () {
+function whenClicked () {
   if(this.getAttribute("data-state") === "notclicked") {
     this.setAttribute = (data-state", "clicked")
     imageCounter++;
@@ -23,8 +26,6 @@ for(var i = 0; i < imagesClassmates.length; i++) {
   }
 }
 */
-
-
 
 /* another thought 
 if an image is clicked check to see if it is in the imagesClicked array
