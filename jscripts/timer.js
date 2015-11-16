@@ -33,6 +33,7 @@ function toggleStartStop() {
 }
 
 
+//checks seconds counter, if >= 20 seconds it ends the game
 function checkSecondsCounter() {
   if (secondsCounter >= 20 ) {
     startStopBtn.innerHTML = "Start";

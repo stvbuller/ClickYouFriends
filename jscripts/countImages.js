@@ -2,12 +2,17 @@ var imagesClassmates = document.getElementsByTagName('img');
 var imagesClicked = [];
 var imageCounter = 0;
 
+
+//anonymous function that adds click to all images
 for(var i = 0; i < imagesClassmates.length; i++) {
   imagesClassmates[i].addEventListener("click", function () {
     imageCounter++;
     alert("This is the " + imageCounter + " image you have clicked");
   });
 }
+
+
+
 
 
 /* function whenClicked () {
