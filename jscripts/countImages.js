@@ -9,15 +9,16 @@ for(var i = 0; i < imagesClassmates.length; i++) {
   });
 }
 
-    /*for (var j = 0;  j < imagesClicked.length; j++) {
-      if (imagesClicked[j] = imagesClassmates[i]) {
-          alert("This image has been clicked")
-        } else {
-          imagesClicked.push(imagesClassmates[i]);
-          imageCounter++;
-          alert("This is the " + imageCounter + " image you have clicked");
-        }
-        */ 
+
+/* function whenClicked () {
+  if(this.getAttribute("data-state") === "notclicked") {
+    this.setAttribute = (data-state", "clicked")
+    imageCounter++;
+    alert("This is the " + imageCounter + " image you have clicked");
+  }
+}
+*/
+
 
 
 /*  if an image is clicked check to see if it is in the imagesClicked array
@@ -26,3 +27,15 @@ for(var i = 0; i < imagesClassmates.length; i++) {
         saying "the image has alredy been clicked" and do not increment imageCounter
 
 */
+
+ /*for (var j = 0;  j < imagesClicked.length; j++) {
+      if (imagesClicked[j] = imagesClassmates[i]) {
+          alert("This image has been clicked")
+        } else {
+          imagesClicked.push(imagesClassmates[i]);
+          imageCounter++;
+          alert("This is the " + imageCounter + " image you have clicked");
+        }
+ */ 
+
+
