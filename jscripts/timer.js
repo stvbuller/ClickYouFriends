@@ -14,7 +14,7 @@ function incrementTimer() {
   secondsCounter++;
  }
 
-function toggleTime() {
+function toggleStartStop() {
   if(this.getAttribute("data-state") === "start") {
     this.innerHTML = "Stop";
     this.setAttribute("data-state", "stop");
@@ -43,5 +43,5 @@ function checkSecondsCounter() {
   } 
 }
 
-startStopBtn.addEventListener("click", toggleTime);
+startStopBtn.addEventListener("click", toggleStartStop);
 
