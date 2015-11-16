@@ -22,6 +22,9 @@ function toggleStartStop() {
     imageCounter = 0;
     timerInterval = setInterval(incrementTimer, 1000);
     checkTimer = setInterval(checkSecondsCounter, 1000);
+    for(var i = 0; i < imagesClassmates.length; i++) {
+      imagesClassmates[i].setAttribute("data-state", "notclicked");
+    }
   } else {
     this.innerHTML = "Start";
     this.setAttribute("data-state", "start");
