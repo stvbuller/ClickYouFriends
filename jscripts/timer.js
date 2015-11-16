@@ -22,7 +22,6 @@ function toggleStartStop() {
     imageCounter = 0;
     timerInterval = setInterval(incrementTimer, 1000);
     checkTimer = setInterval(checkSecondsCounter, 1000);
-  
   } else {
     this.innerHTML = "Start";
     this.setAttribute("data-state", "start");
