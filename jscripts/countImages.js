@@ -26,9 +26,7 @@ for(var i = 0; i < imagesClassmates.length; i++) {
       if the image has already been clicked throw an alert
         saying "the image has alredy been clicked" and do not increment imageCounter
 
-*/
-
- /*for (var j = 0;  j < imagesClicked.length; j++) {
+for (var j = 0;  j < imagesClicked.length; j++) {
       if (imagesClicked[j] = imagesClassmates[i]) {
           alert("This image has been clicked")
         } else {
