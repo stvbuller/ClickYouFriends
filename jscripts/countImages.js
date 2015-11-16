@@ -12,15 +12,19 @@ for(var i = 0; i < imagesClassmates.length; i++) {
         } else {
           imagesClicked.push(imagesClassmates[i]);
           imageCounter++;
+          alert("This is the " + imageCounter + " image you have clicked");
         }
         */ 
   });  
 }
-
+function whenClicked {
+  imageCounter++;
+  alert("This is the " + imageCounter + " image you have clicked");
+}
 
 /*  if an image is clicked check to see if it is in the imagesClicked array
     if is not add it to the array and increase imageCounter by one
-      else the image has already been clicked throw an alert
+      if the image has already been clicked throw an alert
         saying "the image has alredy been clicked" and do not increment imageCounter
 
 */
