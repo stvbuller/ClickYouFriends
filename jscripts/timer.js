@@ -2,7 +2,6 @@ var secondsCounter = 0;
 var timerInterval;
 var startStopBtn = document.getElementById("startStopBtn");
 var checkTimer;
-var endTime = 5000;
 
 setTimeout(function(){
   if(secondsCounter === 0) {
@@ -20,6 +19,7 @@ function toggleTime() {
     this.innerHTML = "Stop";
     this.setAttribute("data-state", "stop");
     secondsCounter = 0;
+    imageCounter = 0;
     timerInterval = setInterval(incrementTimer, 1000);
     checkTimer = setInterval(checkSecondsCounter, 1000);
   
@@ -34,13 +34,14 @@ function toggleTime() {
 
 
 function checkSecondsCounter() {
-  if (secondsCounter >= 5 ) {
+  if (secondsCounter >= 20 ) {
     startStopBtn.innerHTML = "Start";
     startStopBtn.setAttribute("data-state", "start");
     clearInterval(timerInterval); 
     clearInterval(checkTimer);
-    alert("Time is up " + secondsCounter + " seconds");
+    alert("Time is up " + secondsCounter + " seconds, you clicked " + imageCounter + " images");
   } 
 }
 
 startStopBtn.addEventListener("click", toggleTime);
+
