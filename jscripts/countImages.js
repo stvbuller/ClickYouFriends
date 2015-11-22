@@ -2,14 +2,6 @@ var imagesClassmates = document.getElementsByTagName('img');
 var imagesClicked = [];
 var imageCounter = 0;
 
-
-//adds click to all images
-for(var i = 0; i < imagesClassmates.length; i++) {
-  imagesClassmates[i].addEventListener("click", gameStarts);
-}
-
-
-
 function gameStarts() {
   if(startStopBtn.getAttribute("data-state") === "stop"){
     if (this.getAttribute("data-state") === "notclicked") {
@@ -21,4 +13,8 @@ function gameStarts() {
   }
 }
 
+//adds click to all images
+for(var i = 0; i < imagesClassmates.length; i++) {
+  imagesClassmates[i].addEventListener("click", gameStarts);
+}
 
