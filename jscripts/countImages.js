@@ -8,7 +8,9 @@ function gameStarts() {
       this.setAttribute("data-state", "clicked")
       imageCounter++;
     } else { 
-      alert("You have already clicked this image");
+      //alert("You have already clicked this image");
+    $("#clickedModal").modal('show');
+
    }  
   }
 }
